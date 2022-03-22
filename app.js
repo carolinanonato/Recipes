@@ -20,6 +20,5 @@ axios.request(options).then(function (response) {
     console.log(info)
 
 }).catch(function (error) {
-    console.error(error);
+    console.error(`Sorry, we couldn't find that recipe! Error: ${error}`);
 });
-

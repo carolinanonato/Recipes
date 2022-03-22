@@ -6,7 +6,7 @@ const writeToLog = (info) => {
     const data = fs.readFileSync(path, { encoding: 'utf8', flag: 'r' });
     fs.writeFileSync(path, `${data}${info}\n`);
   } catch (err) {
-    console.log(err);
+    console.log(`That was an error saving the file: ${err}`);
 
   }
 }
